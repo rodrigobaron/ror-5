@@ -1,0 +1,30 @@
+Metrics/LineLength:
+  Max: 120
+
+Style/AndOr:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/EmptyLinesAroundBlockBody:
+  Enabled: false
+
+Style/LeadingCommentSpace:
+  Exclude:
+    - Gemfile
+
+Style/WordArray:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Style/DotPosition:
+  EnforcedStyle: trailing
+
+Rails/TimeZone:
+  Enabled: false
+
+Metrics/ClassLength:
+  Max: 100
