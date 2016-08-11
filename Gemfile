@@ -17,6 +17,7 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   gem 'rubocop', require: false
   gem 'reek', require: false
+  gem 'brakeman', :require => false
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'byebug', platform: :mri
