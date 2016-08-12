@@ -1,0 +1,21 @@
+app:
+  build: .
+  command: bash ./script/start.sh
+  volumes:
+    - .:/app
+  ports:
+    - "3000:3000"
+  links:
+    - db
+  volumes_from:
+    - bundle_cache
+
+db:
+  image: postgres:9.4
+  ports:
+    - "5432"
+
+bundle_cache:
+  image: busybox
+  volumes:
+    - /bundle_cache
